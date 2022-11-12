@@ -1,0 +1,4 @@
+.git/
+.vagrant/
+__pycache__/
+code/demo
