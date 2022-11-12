@@ -69,9 +69,12 @@ Run your FastAPI webserver
 
 Surf to the FastAPI site
 
-- Inside your Vagrand SSH shell:
-  - curl -s 'http://127.0.0.1:8012' | jq
+- Inside your Vagrant SSH shell:
+
+      curl -s 'http://127.0.0.1:8012' | jq
+
 - Via your browser on your host:
-  - http://192.168.80.12:8012/
-  - http://192.168.80.12:8012/docs
-  - http://192.168.80.12:8012/redoc
+
+      http://192.168.80.12:8012/
+      http://192.168.80.12:8012/docs
+      http://192.168.80.12:8012/redoc
