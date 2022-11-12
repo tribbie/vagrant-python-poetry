@@ -29,7 +29,7 @@ This Vagrantfile will
 - VirtualBox
 - Vagrant
 
-### To use
+### To start
 
 - clone this repo in a new directory
 - enter this new directory
@@ -66,3 +66,12 @@ Create your FastAPI app
 Run your FastAPI webserver
 
       uvicorn main:app --reload --host 0.0.0.0 --port 8012
+
+Surf to the FastAPI site
+
+- Inside your Vagrand SSH shell:
+  - curl -s 'http://127.0.0.1:8012' | jq
+- Via your browser on your host:
+  - http://192.168.80.12:8012/
+  - http://192.168.80.12:8012/docs
+  - http://192.168.80.12:8012/redoc
