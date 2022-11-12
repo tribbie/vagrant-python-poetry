@@ -61,7 +61,7 @@ Add your python modules needed for your FastAPI project
 Create your FastAPI app
 
       cd demo
-      copy ~/data/main.py.forFastAPI to ~/code/demo/demo/main.py
+      cp ~/data/main.py.forFastAPI ~/code/demo/demo/main.py
 
 Run your FastAPI webserver
 
