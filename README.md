@@ -55,7 +55,7 @@ Create a new project:
     cd ~/code
     poetry new demo
 
-Add your python modules needed for your FastAPI project
+Add the python modules needed for your FastAPI project
 
     cd demo
     poetry shell
