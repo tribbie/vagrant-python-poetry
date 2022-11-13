@@ -1,6 +1,6 @@
 # Vagrant - Python - Poetry - for FastAPI
 
-This is a repository for setting up a FastAPI site.
+This is a repository for setting up a FastAPI site. This is set up using Vagrant and Python Poetry.
 
 ## Vagrant UP
 
