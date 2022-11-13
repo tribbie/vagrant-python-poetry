@@ -26,10 +26,34 @@ This Vagrantfile will
 
 ### Prerequisites
 
-- VirtualBox
-- Vagrant
+I have done this setup on my home Linux laptop, running Linux Mint LMDE
 
-### To start
+    [bart@thinkpad-t480s][~] $ screenfetch
+                                           bart@thinkpad-t480s
+     MMMMMMMMMMMMMMMMMMMMMMMMMmds+.        OS: Linuxmint 5 elsie
+     MMm----::-://////////////oymNMd+`     Kernel: x86_64 Linux 5.10.0-19-amd64
+     MMd      /++                -sNMd:    Uptime: 16d 14h 48m
+     MMNso/`  dMM    `.::-. .-::.` .hMN:   Packages: 2285
+     ddddMMh  dMM   :hNMNMNhNMNMNh: `NMm   Shell: bash 5.1.4
+         NMm  dMM  .NMN/-+MMM+-/NMN` dMM   Resolution: 4480x1440
+         NMm  dMM  -MMm  `MMM   dMM. dMM   DE: GNOME
+         NMm  dMM  -MMm  `MMM   dMM. dMM   WM: Muffin
+         NMm  dMM  .mmd  `mmm   yMM. dMM   WM Theme: Mint-Y-Dark (Mint-Y)
+         NMm  dMM`  ..`   ...   ydm. dMM   GTK Theme: Mint-Y [GTK2/3]
+         hMM- +MMd/-------...-:sdds  dMM   Icon Theme: Mint-Y
+         -NMm- :hNMNNNmdddddddddy/`  dMM   Font: Ubuntu 10
+          -dMNs-``-::::-------.``    dMM   Disk: 331G / 465G (75%)
+           `/dMNmy+/:-------------:/yMMM   CPU: Intel Core i7-8650U @ 8x 4.2GHz [44.0°C]
+              ./ydNMMMMMMMMMMMMMMMMMMMMM   GPU: Mesa Intel(R) UHD Graphics 620 (KBL GT2)
+                 \.MMMMMMMMMMMMMMMMMMM     RAM: 10479MiB / 15755MiB
+
+
+- VirtualBox
+  - in my setup I used VirtualBox 6.1
+- Vagrant
+  - in my setup I used Vagrant 2.2.14
+
+### Let's start
 
 - clone this repo in a new directory
 - enter this new directory
