@@ -2,6 +2,13 @@
 
 This is a repository for setting up a FastAPI site. This is set up using Vagrant and Python Poetry.
 
+These links have been visited during this journey:
+
+- [Vagrant](https://developer.hashicorp.com/vagrant)
+- [Python Poetry](https://python-poetry.org/docs/)
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [FastAPI tutorial](https://fastapi.tiangolo.com/tutorial/first-steps/)
+
 ## Vagrant UP
 
 ### General
