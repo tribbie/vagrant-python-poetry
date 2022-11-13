@@ -45,20 +45,29 @@ Access this via:
 
     vagrant ssh
 
+Your prompt should look like this now:
+
+    [vagrant@python-poetry][~]$
+
+
 ### Poetry project
 
 The following only describes the happy path. Hope all goes well for you too.  
 If not, let the internet help you.
 
-Create a new project:
+Create a new project in the code directory:
 
     cd ~/code
     poetry new demo
+    cd demo
+    poetry shell
+
+Your prompt should look like this now:
+
+    (demo-py3.9) [vagrant@python-poetry][~/code/demo]$
 
 Add the python modules needed for your FastAPI project
 
-    cd demo
-    poetry shell
     poetry add fastapi
     poetry add uvicorn
 
@@ -84,7 +93,7 @@ Ready? It should be, if your setup looks like this:
     └── someinfo.txt
 
 
-Run your FastAPI webserver
+Run your FastAPI webserver (in the ~/code/demo/demo/ directory)
 
     uvicorn main:app --reload --host 0.0.0.0 --port 8012
 
