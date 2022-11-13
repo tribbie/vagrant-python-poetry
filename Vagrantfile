@@ -40,8 +40,6 @@ Vagrant.configure("2") do |config|
     # python-poetry
     curl -sSL https://install.python-poetry.org | python3 -
     cat /vagrant/code/someinfo.txt
-    #cp /vagrant/data/dot-bashrc.fordebian ~/.bashrc
-    #cp /vagrant/data/dot-tmux.conf.fordebian ~/.tmux.conf
   SHELL
 
 end
