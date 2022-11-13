@@ -69,7 +69,7 @@ Create your FastAPI app
 
 Ready? It should be, if your setup looks like this:
 
-(demo-py3.9) [vagrant@python-poetry][~/code/demo/demo]$ tree ~/code
+    (demo-py3.9) [vagrant@python-poetry][~/code/demo/demo]$ tree ~/code
 
     /home/vagrant/code
     ├── demo
