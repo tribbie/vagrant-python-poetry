@@ -107,6 +107,8 @@ Create your FastAPI app
     cd demo
     cp ~/data/main.py.forFastAPI ~/code/demo/demo/main.py
 
+  ![fastapi - main script](docs/media/fastapi-main.png)
+
 Ready? It should be, if your setup looks like this:
 
     (demo-py3.9) [vagrant@python-poetry][~/code/demo/demo]$ tree ~/code
@@ -138,12 +140,16 @@ The following output indicates that all went well, and your api is ready to be s
     INFO:     Waiting for application startup.
     INFO:     Application startup complete.
 
+  ![fastapi - uvicorn running](docs/media/fastapi-uvicorn.png)
+
 
 Surf to the FastAPI site
 
 - Inside your Vagrant SSH shell:
 
       curl -s 'http://127.0.0.1:8012' | jq
+
+    ![fastapi - curl](docs/media/fastapi-curl.png)
 
 - Via your browser on your host:
 
