@@ -95,7 +95,7 @@ Create your FastAPI app
 
 Highlighted?
 
-    '''python
+    ```python
     from fastapi import FastAPI
 
     app = FastAPI()
@@ -103,7 +103,7 @@ Highlighted?
     @app.get("/")
     async def root():
         return {"name": "fastapi", "message": "Hello World"}
-    '''
+    ```
 
   ![fastapi - main script](docs/media/fastapi-main.png)
 
