@@ -93,8 +93,6 @@ Create your FastAPI app
     cd demo
     cp ~/data/main.py.forFastAPI ~/code/demo/demo/main.py
 
-Highlighted?
-
   ```python
   from fastapi import FastAPI
 
@@ -104,8 +102,6 @@ Highlighted?
   async def root():
       return {"name": "fastapi", "message": "Hello World"}
   ```
-
-  ![fastapi - main script](docs/media/fastapi-main.png)
 
 Ready? It should be, if your setup looks like this:
 
