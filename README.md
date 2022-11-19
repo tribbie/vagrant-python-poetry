@@ -137,6 +137,10 @@ Surf to the FastAPI site
 
       curl -s 'http://127.0.0.1:8012' | jq
 
+  or
+
+      curl -s 'http://192.168.80.12:8012' | jq
+
     ![fastapi - curl](docs/media/fastapi-curl.png)
 
 - Via your browser on your host:
