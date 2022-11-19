@@ -11,6 +11,8 @@ These links have been visited during this journey:
 
 ## Vagrant UP
 
+First, we will fire up a Vagrant virtual machine, using the Vagrantfile from this repo.
+
 ### General
 
 This Vagrantfile will
@@ -18,12 +20,12 @@ This Vagrantfile will
 - install debian (bento/debian-11.4)
 - set up network 192.168.80.12
 - forward port 8012
-- synch folder data (containing some handy files)
-- synch folder code (for setting up poetry project and FastAPI)
+- synch folder 'data' (containing some handy files)
+- synch folder 'code' (for setting up poetry project and FastAPI)
 - configure data/dot-bashrc.fordebian as the .bashrc
 - configure data/dot-tmux.conf.fordebian as the .tmux.conf (for colored prompt)
 - provision (as root)
-  - python3-disutils (needed for Poetry)
+  - python3-distutils (needed for Poetry)
   - curl, tmux, tree, jq (some handy little tools)
 - provision (as user)
   - python-poetry
@@ -36,7 +38,6 @@ This Vagrantfile will
 I have done this setup on my home Linux laptop, running Linux Mint LMDE
 
   ![fastapi - host computer](docs/media/host-computer.png)
-
 
 - VirtualBox
   - in my setup I used VirtualBox 6.1
@@ -54,8 +55,10 @@ I have done this setup on my home Linux laptop, running Linux Mint LMDE
 
 ## Vagrant SSH
 
-Setting up the Poetry project can be done inside your Vagrant machine.  
-Access this via:
+We should now have a Vagrant virtual machine running.
+
+Setting up the Poetry project can be done using the terminal inside your Vagrant machine.  
+Access the machine via:
 
     vagrant ssh
 
@@ -89,6 +92,16 @@ Create your FastAPI app
 
     cd demo
     cp ~/data/main.py.forFastAPI ~/code/demo/demo/main.py
+
+'''python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {"name": "fastapi", "message": "Hello World"}
+'''
 
   ![fastapi - main script](docs/media/fastapi-main.png)
 
