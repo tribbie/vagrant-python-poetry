@@ -93,15 +93,17 @@ Create your FastAPI app
     cd demo
     cp ~/data/main.py.forFastAPI ~/code/demo/demo/main.py
 
-  ```python
-  from fastapi import FastAPI
+This is about the most simple main.py you can produce:
 
-  app = FastAPI()
+```python
+from fastapi import FastAPI
 
-  @app.get("/")
-  async def root():
-      return {"name": "fastapi", "message": "Hello World"}
-  ```
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {"name": "fastapi", "message": "Hello World"}
+```
 
 Ready? It should be, if your setup looks like this:
 
